@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/af2e7c57fe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div style="background-color: #080808; color: red; padding: 35px; font-size: 50px;"><span>Naga Phani</span></div>
+
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">My Projects</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Aspiring Software Engineer</p>
+          <h1>Hi, I'm <span>N B G S Phaneendra Kumar</span><br />From SRM University AP</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------- About --------- -->
+
+    <div id="about">
+      <div class="conatiner">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="kumar.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Passionate about continuous learning and dedicated eager to contribute my skills and knowledge in your
+organization and I am confident that my passion for learning, coupled with my dedication and enthusiasm,
+will make me a valuable asset to your organization.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Techinical skills</span><br />C,C++,Python</li>
+                <li><span>Soft Skills</span><br />Communication skills,team work,Problem solving</li>
+                
+              </ul>
+            </div>
+
+            <div class="tab-contents " id="Certifications">
+              <ul>
+                <li>
+                  <span>June 2025 - August 2025</span><br />UI/UX Designer
+                  Intern at Agumentik Group of Companies
+                </li> 
+                <li>
+                  <span>May 2025 - Present</span><br />Research Intern at SRM
+                  University, AP
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2022 - 2026</span><br />SRM University, AP</li>
+                <li>
+                  <span>2020 - 2022</span><br />KM IIT
+                </li>
+                <li><span>2020</span><br />Sri Gowthami High School</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------- Services ------------- -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+          <div>
+            <h2>Bus Managament System</h2>
+            <p>
+             Developed a C++ project of Bus Management System with user-friendly options for booking, along with
+advanced features for easy updates and deletions, enhancing the efficiency of transportation logistics
+            </p>
+            <a href="">Learn More</a>
+          </div>
+          <div>
+           
+            <h2>Virtual Assistance</h2>
+            <p>
+              Developed an advanced voice-based AI assistant with Python similar to Google Assistant and Siri, integrated with web to deliver real-time responses with efficiency and accuracy
+            </p>
+            <a href="">Learn More</a>
+          </div>
+          <div>
+           
+            <h2>Online Job Portal </h2>
+            <p>
+             Developed a functional online job portal with Java, Servlet, JSP, and MySQL. Streamlined employer
+hiring and enhanced job seekers’ experience.
+
+            </p>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------- Portfolio ----------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="ibm.jpg" />
+            <div class="layer">
+              <h3>IBM SkillaBuild</h3>
+              <p>
+                Currently pursuing certification in Cybersecurity Fundamentals through Coursera, covering essential
+topics such as network security, cryptography, risk management, and security policies
+
+
+
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="nptel.jpg" />
+            <div class="layer">
+              <h3>The joy of Computing using Python</h3>
+              <p>
+                
+Completed Python course through NPTEL, mastering fundamental programming concepts with practical
+proficiency in application development, data analysis, and automation
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="ibm.jpg" />
+            <div class="layer">
+              <h3> IBM SkillaBuild  </h3>
+              <p>
+                Completing the IBM SkillaBuild course on IBM has equipped me with a solid foundation in programming fundamentals and problem-solving skills
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- ---------------- Contact --------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>nbgsphaneendrakumar_ch@srmap.edu.in</p>
+            <p><i class="fa-solid fa-phone"></i>9390471518</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/naga-phanindra-kumar-957087259/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/nagaphani18"><i class="fa-brands fa-github"></i></a>
+            
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+
+            <span id="msg"></span>
+
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Phani. Made with <i class="fa-solid fa-heart"></i> by Easy
+          Tutorials
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyjbwC-8Q6Q5y8q2jt2meCh9wjwfz__4bep0_d95h4yOPmlPLQYlWq2HkjPlNU3xoA-/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg")
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
